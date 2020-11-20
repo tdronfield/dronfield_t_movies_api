@@ -35,7 +35,7 @@ class Movie
         $query .=' FROM '.$this->movie_table.' m';
         $query .=' LEFT JOIN '.$this->movie_genre_linking_table.' link ON link.movies_id = m.movies_id'; 
         $query .=' LEFT JOIN '.$this->genre_table.' g ON g.genre_id = link.genre_id';
-        $query .=' WHERE g.genre_name ="'.$genre.'"'; 
+        $query .=' WHERE g.genre_name LIKE "%'.$genre.'%"'; 
         $query .=' GROUP BY m.movies_id';
 
         // echo $query;
