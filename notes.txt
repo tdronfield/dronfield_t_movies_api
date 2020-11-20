@@ -1,0 +1,8 @@
+Dev
+
+1. Can we reuse the common table names in movie.php?
+2. Turn of JESON_PRETTY_PRINT - DONE
+
+PM:
+1. Genre info is missingfrom the movie list and single movie endpoint
+2. Search genre by approximate match - string matching ?
